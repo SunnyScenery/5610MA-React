@@ -3,6 +3,7 @@ import GridItem from "./grid.jsx";
 import { CountContext } from "../store/count-context";
 
 export default function GridContainer() {
+  // use context to handle the count number across components
   const [count] = useContext(CountContext);
   return (
     <>

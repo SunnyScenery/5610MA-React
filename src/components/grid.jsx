@@ -3,6 +3,7 @@ import { CountContext } from "../store/count-context";
 
 export default function GridItem() {
   const [black, setBlack] = useState(false);
+  // use context to handle the count number across components
   const [count, setCount] = useContext(CountContext);
 
   const handleClick = () => {
